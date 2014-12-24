@@ -1,0 +1,56 @@
+.navbar{
+	position: fixed;
+	width: 100%;
+	background-color:#3D007A;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	font-family: "Calibri", Sans-serif;
+}
+
+.center{
+	padding: 30px 150px 30px 150px;
+}
+.navbar-list{
+	list-style-type: none;		
+	overflow: hidden;
+	padding: 0px 150px 0px 150px;		
+	margin: 0px;
+}
+
+#navbar-items{
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+#navbar-item:link, #navbar-item:visited{
+	display: block;
+	text-decoration: none;
+	padding: 20px 4px 20px 4px;	
+	background-color: #3D007A;
+	color: #ffffff;
+	width: 120px;
+	text-align: center;	
+}
+
+#navbar-item:hover{
+	background-color: #CCAAFF;
+	color: #000000;		
+}
+
+#circle{
+	width: 150px;
+	height: 150px;
+	display: block;
+	float: left;
+	border-radius: 50%;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	margin-right: 50px;
+}

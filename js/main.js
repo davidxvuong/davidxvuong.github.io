@@ -52,7 +52,6 @@ function adjustPage(){
 			$("#intro").css("padding-top", "10px");
 			$(".navbar").css("font-size", "20px");
 			$(".menu").css("display", "block");
-			$("#navbar-item").css("height", "45px");
 			$(".navbar").fadeOut();
 		}
 		else {
@@ -66,7 +65,6 @@ function adjustPage(){
 			$(".navbar").css("font-size", "15px");
 			$(".menu").css("display", "none");
 			$(".menu").css("left", "0px");
-			$("#navbar-item").css("height", "inherit");
 			$(".navbar").fadeIn();
 		}
 }

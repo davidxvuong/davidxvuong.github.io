@@ -2,6 +2,7 @@
 	position: fixed;
 	font-size: 15px;
 	width: 100%;
+	overflow: auto;
 }
 
 body{

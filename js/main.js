@@ -46,5 +46,7 @@ function adjustPage(){
 
 function load(){
 	adjustPage();
-
+	if ($(window).width() <= 1148){
+		$(".navbar").hide();
+	}
 }

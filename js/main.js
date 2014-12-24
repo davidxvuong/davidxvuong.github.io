@@ -7,7 +7,7 @@ $(function(){
 	});
 	
 	$(window).scroll(function(){
-		if ($(window).width() > 1010){
+		if ($(window).width() > 1148){
 			scrollOld = scrollCurrent;
 			scrollCurrent = $(this).scrollTop();
 			
@@ -22,7 +22,7 @@ $(function(){
 });
 
 function adjustPage(){
-	if ($(window).width() <= 1010){
+	if ($(window).width() <= 1148){
 			$(".navbar-list").css("width", "150px");
 			$(".navbar-list, .navbar").css("height", "100%");
 			$(".navbar-list").css("padding", "0");

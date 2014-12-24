@@ -9,7 +9,7 @@ $(function(){
 	});
 	
 	$(window).scroll(function(){
-		if (screenWidth > 1000){
+		if (screenWidth > 1010){
 			scrollOld = scrollCurrent;
 			scrollCurrent = $(this).scrollTop();
 			
@@ -29,7 +29,8 @@ function adjustPage(){
 			$(".navbar-list, .navbar").css("height", "100%");
 			$(".navbar-list").css("padding", "0");
 			$(".navbar").css("width", "auto");
-			$(".center").css("padding-top", "10px");
+			$(".center").css("padding", "30px 0px 30px 0px");
+			$("#intro").css("padding-top", "10px");
 			$(".navbar").fadeOut();
 		}
 		else {
@@ -37,7 +38,8 @@ function adjustPage(){
 			$(".navbar-list").css("width", "auto");
 			$(".navbar-list").css("padding", "0px 150px 0px 150px");
 			$(".navbar").css("width", "100%");
-			$(".center").css("padding-top", "60px");
+			$(".center").css("padding", "30px 150px 30px 150px");
+			$("#intro").css("padding-top", "60px");
 			$(".navbar").fadeIn();
 		}
 }
@@ -45,4 +47,7 @@ function adjustPage(){
 function load(){
 	adjustPage();
 	screenWidth = $(window).width();
+	if (screenWidth <= 1010) {
+		$(".navbar").hide();
+	}
 }

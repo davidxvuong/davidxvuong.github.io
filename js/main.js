@@ -38,6 +38,7 @@ function adjustPage(){
 			$(".navbar").css("width", "100%");
 			$(".center").css("padding", "30px 150px 30px 150px");
 			$("#intro").css("padding-top", "60px");
+			$(".navbar").css("font-size", "15px");
 		}
 }
 

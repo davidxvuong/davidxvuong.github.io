@@ -27,6 +27,13 @@ body{
 	float: left;
 }
 
+h1{
+	font-size: 50px; 
+	padding: 0;
+	margin: 10px 0 10px 0; 
+	text-align: center;
+}
+
 #navbar-item:link, #navbar-item:visited{
 	display: block;
 	text-decoration: none;

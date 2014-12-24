@@ -1,16 +1,13 @@
 var scrollOld;
 var scrollCurrent;
-var screenWidth;
 
 $(function(){
 	$(window).resize(function(){
-		screenWidth = $(window).width();
-		
 		adjustPage();
 	});
 	
 	$(window).scroll(function(){
-		if (screenWidth > 1010){
+		if ($(window).width() > 1010){
 			scrollOld = scrollCurrent;
 			scrollCurrent = $(this).scrollTop();
 			
@@ -30,9 +27,9 @@ function adjustPage(){
 			$(".navbar-list, .navbar").css("height", "100%");
 			$(".navbar-list").css("padding", "0");
 			$(".navbar").css("width", "auto");
-			$(".center").css("padding", "30px 40px 30px 40px");
+			$(".center").css("padding", "30px 40px 30px 168px");
 			$("#intro").css("padding-top", "10px");
-			$(".navbar").fadeOut();
+			//$(".navbar").fadeOut();
 		}
 		else {
 			$(".navbar-list, .navbar").css("height", "auto");
@@ -41,15 +38,10 @@ function adjustPage(){
 			$(".navbar").css("width", "100%");
 			$(".center").css("padding", "30px 150px 30px 150px");
 			$("#intro").css("padding-top", "60px");
-			$(".navbar").fadeIn();
+			//$(".navbar").fadeIn();
 		}
 }
 
 function load(){
 	adjustPage();
-	screenWidth = $(window).width();
-	
-	if (screenWidth <= 1010) {
-		$(".navbar").hide();
-	}
 }

@@ -40,8 +40,9 @@ h1{
 	padding: 20px 4px 20px 4px;	
 	background-color: #3D007A;
 	color: #ffffff;
-	width: 120px;
+	width: 130px;
 	text-align: center;	
+	text-transform: uppercase;
 }
 
 #navbar-item:hover{

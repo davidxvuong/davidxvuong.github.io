@@ -29,7 +29,7 @@ function adjustPage(){
 			$(".navbar-list, .navbar").css("height", "100%");
 			$(".navbar-list").css("padding", "0");
 			$(".navbar").css("width", "auto");
-			$(".center").css("padding", "30px 0px 30px 0px");
+			$(".center").css("padding", "30px 15px 30px 15px");
 			$("#intro").css("padding-top", "10px");
 			$(".navbar").fadeOut();
 		}

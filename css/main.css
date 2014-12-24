@@ -45,12 +45,7 @@ body{
 #circle{
 	width: 200px;
 	height: 200px;
-	/*
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+	border: 5px solid #3D007A;
 	display: block;
 	border-radius: 50%;
 	margin: 0 auto 0 auto;

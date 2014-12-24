@@ -1,7 +1,6 @@
 .navbar{
 	position: fixed;
 	width: 100%;
-	background-color:#3D007A;
 }
 
 body{
@@ -18,6 +17,7 @@ body{
 	overflow: hidden;
 	padding: 0px 150px 0px 150px;		
 	margin: 0px;
+	background-color: #3D007A;
 }
 
 #navbar-items{

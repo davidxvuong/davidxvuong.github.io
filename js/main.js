@@ -1,13 +1,34 @@
 var scrollOld;
 var scrollCurrent;
+var screenWidth;
 
 $(function(){
 	$(window).resize(function(){
-		if ($(window).width() <= 1010){
+		adjustPage();
+	});
+	
+	$(window).scroll(function(){
+		if (screenWidth > 900){
+			scrollOld = scrollCurrent;
+			scrollCurrent = $(this).scrollTop();
+			
+			if (scrollCurrent - scrollOld > 0 && scrollCurrent > 400) {
+				$(".navbar").fadeOut();
+			}
+			else {
+				$(".navbar").fadeIn();
+			}
+		}
+	});
+});
+
+function adjustPage(){
+	if ($(window).width() <= 1010){
 			$(".navbar-list").css("width", "128px");
 			$(".navbar-list, .navbar").css("height", "100%");
 			$(".navbar-list").css("padding", "0");
 			$(".navbar").css("width", "auto");
+			$(".center").css("padding-top", "10px");
 			$(".navbar").fadeOut();
 		}
 		else {
@@ -18,18 +39,10 @@ $(function(){
 			$(".center").css("padding-top", "60px");
 			$(".navbar").fadeIn();
 		}
-		
-	});
-	
-	$(window).scroll(function(){
-		scrollOld = scrollCurrent;
-		scrollCurrent = $(this).scrollTop();
-		
-		if (scrollCurrent - scrollOld > 0 && scrollCurrent > 400) {
-			$(".navbar").fadeOut();
-		}
-		else {
-			$(".navbar").fadeIn();
-		}
-	});
-});
+}
+
+function load(){
+	adjustPage();
+	screenWidth = $(window).width();
+	alert(screenWidth);
+}

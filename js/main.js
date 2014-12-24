@@ -29,6 +29,7 @@ function adjustPage(){
 			$(".navbar").css("width", "auto");
 			$(".center").css("padding", "30px 40px 30px 178px");
 			$("#intro").css("padding-top", "10px");
+			$(".navbar").css("font-size", "22px");
 		}
 		else {
 			$(".navbar-list, .navbar").css("height", "auto");

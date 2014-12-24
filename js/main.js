@@ -39,6 +39,14 @@ $(function(){
 			isMenuOpen = false;
 		}
 	});
+	
+	$("html").click(function(){
+		if (isMobile == true){
+			$(".menu").css("left", "0px");
+			$(".navbar").hide();
+			isMenuOpen = false;
+		}
+	});
 });
 
 function adjustPage(){

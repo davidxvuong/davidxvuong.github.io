@@ -15,14 +15,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	</head>
 	<body onload = "load()">
+		<img class = "menu" src = "images/menuicon.jpg"/>
 		<div class = "navbar">
 			<ul class = "navbar-list">
-				<li id = "navbar-items"><a id = "navbar-item" href = "#experience">Work Experience</a></li>
-				<li id = "navbar-items"><a id = "navbar-item" href = "#projects">Projects</a></li>
-				<li id = "navbar-items"><a id = "navbar-item" href = "#evaluations">Evaluations</a></li>
-				<li id = "navbar-items"><a id = "navbar-item" href = "#references">References</a></li>
-				<li id = "navbar-items"><a id = "navbar-item" href = "#about">About</a></li>
-				<li id = "navbar-items"><a id = "navbar-item" href = "#contact">Contact</a></li>
+				<li id = "navbar-items" onclick = "show()"><a id = "navbar-item" href = "#experience">Work Experience</a></li>
+				<li id = "navbar-items" onclick = "show()"><a id = "navbar-item" href = "#projects">Projects</a></li>
+				<li id = "navbar-items" onclick = "show()"><a id = "navbar-item" href = "#evaluations">Evaluations</a></li>
+				<li id = "navbar-items" onclick = "show()"><a id = "navbar-item" href = "#references">References</a></li>
+				<li id = "navbar-items" onclick = "show()"><a id = "navbar-item" href = "#about">About</a></li>
+				<li id = "navbar-items" onclick = "show()"><a id = "navbar-item" href = "#contact">Contact</a></li>
 			</ul>
 		</div>
 		<div class = "center" id = "intro" style = "padding-top: 60px">
@@ -31,7 +32,22 @@
 			<p>Hi, I'm David, and welcome to my website! I am pursuing a Bachelor of Applied Sciences degree at the <a href = "http://uwaterloo.ca">University of Waterloo</a>, majoring in Computer Engineering with an option in Management Sciences. I have a strong passion for software development, embedded systems, and circuit development. Feel free to reach out to me by <a href = "mailto:david.vuong@uwaterloo.ca">email</a> or <a href = "http://ca.linkedin.com/in/davidxvuong/">LinkedIn</a>!</p>
 		</div>
 		
-		<div class = "center" style = "background-color: #000000; color: #ffffff; height: 50000px" id = "about">
+		<div class = "center" id = "experience" style = "background-color: #000000; color: #ffffff; height: 500px" id = "about">
+			
+		</div>
+		<div class = "center" id = "projects" style = "background-color: red; color: #ffffff; height: 500px" id = "about">
+			
+		</div>
+		<div class = "center" id = "evaluations" style = "background-color: blue; color: #ffffff; height: 500px" id = "about">
+			
+		</div>
+		<div class = "center" id = "references" style = "background-color: yellow; color: #ffffff; height: 500px" id = "about">
+			
+		</div>
+		<div class = "center" id = "about" style = "background-color: orange; color: #ffffff; height: 500px" id = "about">
+			
+		</div>
+		<div class = "center" id = "contact" style = "background-color: pink; color: #ffffff; height: 500px" id = "about">
 			
 		</div>
 	</body>

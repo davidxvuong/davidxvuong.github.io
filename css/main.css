@@ -10,6 +10,14 @@ body{
 	font-family: "Calibri", Sans-serif;
 }
 
+.menu{
+	height: 50px;
+	width: 50px;
+	float: left;
+	display: none;
+	position: fixed;
+}
+
 .center{
 	padding: 30px 150px 30px 150px;
 	font-size: 22px;

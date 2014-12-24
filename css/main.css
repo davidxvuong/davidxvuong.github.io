@@ -44,11 +44,11 @@ body{
 #circle{
 	width: 150px;
 	height: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
 	display: block;
 	float: left;
 	border-radius: 50%;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);

@@ -1,11 +1,11 @@
 var scrollOld;
 var scrollCurrent;
 var screenWidth;
-var imgAdjustment = ["width", "height", "-webkit-border-radius", "-moz-border-radius"];
 
 $(function(){
 	$(window).resize(function(){
 		screenWidth = $(window).width();
+		
 		adjustPage();
 	});
 	
@@ -32,6 +32,10 @@ function adjustPage(){
 			$(".navbar").css("width", "auto");
 			$(".center").css("padding", "30px 40px 30px 40px");
 			$("#intro").css("padding-top", "10px");
+			$("#circle").css("width", "200px");
+			$("#circle").css("height", "200px");
+			$("#circle").css("-webkit-border-radius", "200px");
+			$("#circle").css("-moz-border-radius", "200px");
 			$(".navbar").fadeOut();
 		}
 		else {
@@ -41,14 +45,18 @@ function adjustPage(){
 			$(".navbar").css("width", "100%");
 			$(".center").css("padding", "30px 150px 30px 150px");
 			$("#intro").css("padding-top", "60px");
+			$("#circle").css("width", "150px");
+			$("#circle").css("height", "150px");
+			$("#circle").css("-webkit-border-radius", "150px");
+			$("#circle").css("-moz-border-radius", "150px");
 			$(".navbar").fadeIn();
 		}
 }
 
 function load(){
-	adjustPage();
-	screenWidth = $(window).width();
 	if (screenWidth <= 1010) {
 		$(".navbar").hide();
 	}
+	adjustPage();
+	screenWidth = $(window).width();
 }

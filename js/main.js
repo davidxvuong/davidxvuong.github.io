@@ -4,11 +4,12 @@ var screenWidth;
 
 $(function(){
 	$(window).resize(function(){
+		screenWidth = $(window).width();
 		adjustPage();
 	});
 	
 	$(window).scroll(function(){
-		if (screenWidth > 900){
+		if (screenWidth > 1000){
 			scrollOld = scrollCurrent;
 			scrollCurrent = $(this).scrollTop();
 			
@@ -44,5 +45,4 @@ function adjustPage(){
 function load(){
 	adjustPage();
 	screenWidth = $(window).width();
-	alert(screenWidth);
 }

@@ -1,6 +1,7 @@
 var scrollOld;
 var scrollCurrent;
 var screenWidth;
+var imgAdjustment = ["width", "height", "-webkit-border-radius", "-moz-border-radius"];
 
 $(function(){
 	$(window).resize(function(){
@@ -29,7 +30,7 @@ function adjustPage(){
 			$(".navbar-list, .navbar").css("height", "100%");
 			$(".navbar-list").css("padding", "0");
 			$(".navbar").css("width", "auto");
-			$(".center").css("padding", "30px 15px 30px 15px");
+			$(".center").css("padding", "30px 40px 30px 40px");
 			$("#intro").css("padding-top", "10px");
 			$(".navbar").fadeOut();
 		}

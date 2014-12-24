@@ -52,6 +52,7 @@ h1{
 	width: 150px;
 	text-align: center;	
 	text-transform: uppercase;
+	height: inherit;
 }
 
 #navbar-item:hover{

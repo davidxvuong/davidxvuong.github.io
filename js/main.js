@@ -27,9 +27,10 @@ function adjustPage(){
 			$(".navbar-list, .navbar").css("height", "100%");
 			$(".navbar-list").css("padding", "0");
 			$(".navbar").css("width", "auto");
-			$(".center").css("padding", "30px 40px 30px 190px");
+			$(".center").css("padding", "30px 40px 30px 30px");
 			$("#intro").css("padding-top", "10px");
 			$(".navbar").css("font-size", "20px");
+			$(".navbar").fadeOut();
 		}
 		else {
 			$(".navbar-list, .navbar").css("height", "auto");
@@ -39,9 +40,11 @@ function adjustPage(){
 			$(".center").css("padding", "30px 150px 30px 150px");
 			$("#intro").css("padding-top", "60px");
 			$(".navbar").css("font-size", "15px");
+			$(".navbar").fadeIn();
 		}
 }
 
 function load(){
 	adjustPage();
+
 }

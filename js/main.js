@@ -1,7 +1,7 @@
 var scrollOld;
 var scrollCurrent;
 var isMenuOpen = false;
-var isMobile = false;
+var isMobile;
 
 $(function(){
 	$(window).resize(function(){

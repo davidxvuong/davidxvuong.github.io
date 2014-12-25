@@ -46,8 +46,8 @@ function adjustPage(platform, event){
 		case "iPhone":
 		case "iPad":
 		case "iPod":
+		case "BlackBerry":
 		case "Linux armv71":
-			isMobile = true;
 			$(".navbar").css("overflow-y", "scroll");
 			
 			toggleCss("small");
@@ -59,7 +59,6 @@ function adjustPage(platform, event){
 			}
 			break;
 		default:
-			isMobile = false;
 			$(".navbar").css("overflow-y", "visible");
 			if ($(window).width() <= 1148) {
 				toggleCss("small");
@@ -109,7 +108,11 @@ function toggleCss(screenSize) {
 }
 
 function load(){
-	adjustPage(navigator.platform, "onload");
+	var platform = navigator.platform;
+	adjustPage(platform, "onload");
+	
+	isMobile = (platform == "iPad" || platform == "iPhone" || platform == "BlackBerry" || platform == "iPod" || platform == "Linux armv71")? true: false;
+	
 }
 
 function show(){

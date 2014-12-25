@@ -18,20 +18,6 @@ $(function(){
 		}
 	});
 	
-	/*$(window).scroll(function(){
-		if ($(window).width() > 1148 && isMobile == false ){
-			scrollOld = scrollCurrent;
-			scrollCurrent = $(this).scrollTop();
-			
-			if (scrollCurrent - scrollOld > 0 && scrollCurrent > 400) {
-				$(".navbar").fadeOut();
-			}
-			else {
-				$(".navbar").fadeIn();
-			}
-		}
-	});*/
-	
 	$(".menu").hover(function(){
 		$('.menu').css( 'cursor', 'pointer' );
 	});

@@ -1,12 +1,28 @@
 var isMenuOpen = false;
 var isMobile;
+const MIN_SCREEN_SIZE = 1247;
+var scrollOld;
+var scrollCurrent;
 
 $(function(){
 	$(window).resize(function(){
+		document.getElementById("projects").innerHTML = $(window).width();
 		adjustPage(navigator.platform, "resize");
 	});
 	
 	$(window).scroll(function(){
+		if ($(window).width() > MIN_SCREEN_SIZE && isMobile == false ){
+			scrollOld = scrollCurrent;
+			scrollCurrent = $(this).scrollTop();
+			
+			if (scrollCurrent - scrollOld > 0 && scrollCurrent > 400) {
+				$(".navbar").fadeOut();
+			}
+			else {
+				$(".navbar").fadeIn();
+			}
+		}
+		
 		if ($(this).scrollTop() > 100) {
 			$(".returnToTop").css("visibility", "visible");
 			$(".returnToTop").fadeIn();
@@ -45,7 +61,7 @@ $(function(){
 		event.preventDefault();
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 		
-		if (isMobile == true){
+		if (isMobile == true || (isMobile == false && $(window).width() <= MIN_SCREEN_SIZE)){
 			$(".menu").css("left", "0px");
 			$(".navbar").hide();
 			isMenuOpen = false;
@@ -70,7 +86,7 @@ function adjustPage(platform, event){
 			$(".navbar").css("overflow-y", "scroll");
 			break;
 		default:
-			if ($(window).width() <= 1148 && isMobile == false) {
+			if ($(window).width() <= MIN_SCREEN_SIZE && isMobile == false) {
 				toggleCss("small");
 				if (event == "resize") {
 					$(".navbar").fadeOut();
@@ -102,6 +118,9 @@ function toggleCss(screenSize) {
 		$("#intro").css("padding-top", "10px");
 		$(".navbar").css("font-size", "20px");
 		$(".menu").css("display", "block");
+		for (var i = 1; i < 4; i++){
+			$("#logo" + i).css("float", "left");
+		}
 	}
 	else if (screenSize == "big") {
 		$(".navbar-list, .navbar").css("height", "auto");
@@ -113,6 +132,9 @@ function toggleCss(screenSize) {
 		$(".navbar").css("font-size", "15px");
 		$(".menu").css("display", "none");
 		$(".menu").css("left", "0px");
+		for (var i = 1; i < 4; i++){
+			$("#logo" + i).css("float", "right");
+		}
 	}
 }
 

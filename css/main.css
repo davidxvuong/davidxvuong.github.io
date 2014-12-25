@@ -39,6 +39,17 @@
 	background-size: cover;
 }
 
+#jobDesc{
+	display: block;
+}
+
+#logo1, #logo2, #logo3{
+	float:right; 
+	height: 80px; 
+	width: 280px;
+	display: block;
+}
+
 a:link, a:visited{
 	color: #ffffff;
 }
@@ -88,7 +99,7 @@ h1{
 h2{
 	font-size: 40px;
 	padding: 0;
-	margin: 20px 0 10px 0; 
+	margin: 0 0 10px 0; 
 	text-align: left;
 }
 

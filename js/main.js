@@ -10,6 +10,7 @@ $(function(){
 	
 	$(window).scroll(function(){
 		if ($(window).width() > 1148 && isMobile == false ){
+			alert("test");
 			scrollOld = scrollCurrent;
 			scrollCurrent = $(this).scrollTop();
 			

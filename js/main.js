@@ -59,7 +59,6 @@ function adjustPage(platform, event){
 			}
 			break;
 		default:
-			alert(platform + " " + isMobile);
 			$(".navbar").css("overflow-y", "visible");
 			if ($(window).width() <= 1148 && isMobile == false) {
 				toggleCss("small");

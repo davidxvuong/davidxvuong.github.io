@@ -63,7 +63,6 @@ function adjustPage(platform, event){
 			if ($(window).width() <= 1148) {
 				toggleCss("small");
 				if (event == "resize") {
-					alert("test");
 					$(".navbar").fadeOut();
 				}
 				else {

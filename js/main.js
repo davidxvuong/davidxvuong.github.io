@@ -51,8 +51,6 @@ function adjustPage(platform, event){
 		case "iPod":
 		case "BlackBerry":
 		case "Linux armv7l":
-			$(".navbar").css("overflow-y", "scroll");
-			
 			toggleCss("small");
 			if (isMenuOpen == false) {
 				$(".navbar").hide();
@@ -60,9 +58,9 @@ function adjustPage(platform, event){
 			else {
 				$(".navbar").show();
 			}
+			$(".navbar").css("overflow-y", "scroll");
 			break;
 		default:
-			$(".navbar").css("overflow-y", "visible");
 			if ($(window).width() <= 1148 && isMobile == false) {
 				toggleCss("small");
 				if (event == "resize") {

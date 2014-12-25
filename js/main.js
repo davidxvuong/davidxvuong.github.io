@@ -47,7 +47,7 @@ function adjustPage(platform, event){
 		case "iPad":
 		case "iPod":
 		case "BlackBerry":
-		case "Linux armv71":
+		case "Linux arm7l":
 			$(".navbar").css("overflow-y", "scroll");
 			
 			toggleCss("small");
@@ -109,7 +109,7 @@ function toggleCss(screenSize) {
 
 function load(){
 	var platform = navigator.platform;
-	isMobile = (platform == "iPad" || platform == "iPhone" || platform == "BlackBerry" || platform == "iPod" || platform == "Linux armv71")? true: false;
+	isMobile = (platform == "iPad" || platform == "iPhone" || platform == "BlackBerry" || platform == "iPod" || platform == "Linux armv7l")? true: false;
 	alert(platform + " " + isMobile);
 	adjustPage(platform, "onload");
 }

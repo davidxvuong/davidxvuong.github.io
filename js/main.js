@@ -1,5 +1,3 @@
-var scrollOld;
-var scrollCurrent;
 var isMenuOpen = false;
 var isMobile;
 
@@ -37,6 +35,17 @@ $(function(){
 			isMenuOpen = true;
 		}
 		else {
+			$(".menu").css("left", "0px");
+			$(".navbar").hide();
+			isMenuOpen = false;
+		}
+	});
+	
+	$(".navbar-item").click(function(event){
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+		
+		if (isMobile == true){
 			$(".menu").css("left", "0px");
 			$(".navbar").hide();
 			isMenuOpen = false;
@@ -111,10 +120,4 @@ function load(){
 	var platform = navigator.platform;
 	isMobile = (platform == "iPad" || platform == "iPhone" || platform == "BlackBerry" || platform == "iPod" || platform == "Linux armv7l")? true: false;
 	adjustPage(platform, "onload");
-}
-
-function show(){
-	$(".menu").css("left", "0px");
-	$(".navbar").hide();
-	isMenuOpen = false;
 }

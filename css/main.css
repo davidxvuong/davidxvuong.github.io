@@ -73,7 +73,7 @@ body{
 	background-color: #3D007A;
 }
 
-#navbar-items{
+.navbar-li{
 	padding: 0px;
 	margin: 0px;
 	float: left;
@@ -86,7 +86,7 @@ h1{
 	text-align: center;
 }
 
-a#navbar-item:link, a#navbar-item:visited{
+a.navbar-item:link, a.navbar-item:visited{
 	display: block;
 	text-decoration: none;
 	padding: 20px 4px 20px 4px;	
@@ -98,7 +98,7 @@ a#navbar-item:link, a#navbar-item:visited{
 	height: inherit;
 }
 
-a#navbar-item:hover{
+a.navbar-item:hover{
 	background-color: #CCAAFF;
 	color: #000000;		
 }
@@ -111,4 +111,6 @@ a#navbar-item:hover{
 	border-radius: 50%;
 	margin: 0 auto 0 auto;
 	padding: 0;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
 }

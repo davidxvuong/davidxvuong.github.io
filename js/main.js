@@ -47,7 +47,7 @@ function adjustPage(platform, event){
 		case "iPad":
 		case "iPod":
 		case "BlackBerry":
-		case "Linux arm7l":
+		case "Linux armv7l":
 			$(".navbar").css("overflow-y", "scroll");
 			
 			toggleCss("small");

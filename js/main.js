@@ -10,7 +10,6 @@ $(function(){
 	
 	$(window).scroll(function(){
 		if ($(window).width() > 1148 && isMobile == false ){
-			alert("test");
 			scrollOld = scrollCurrent;
 			scrollCurrent = $(this).scrollTop();
 			
@@ -65,6 +64,7 @@ function adjustPage(platform, event){
 			if ($(window).width() <= 1148) {
 				toggleCss("small");
 				if (event == "resize") {
+					alert("test");
 					$(".navbar").fadeOut();
 				}
 				else {

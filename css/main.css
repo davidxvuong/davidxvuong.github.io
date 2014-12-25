@@ -85,6 +85,12 @@ h1{
 	margin: 10px 0 10px 0; 
 	text-align: center;
 }
+h2{
+	font-size: 40px;
+	padding: 0;
+	margin: 20px 0 10px 0; 
+	text-align: left;
+}
 
 a.navbar-item:link, a.navbar-item:visited{
 	display: block;

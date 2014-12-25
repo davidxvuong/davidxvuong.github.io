@@ -5,6 +5,7 @@ var isMobile = false;
 
 $(function(){
 	$(window).resize(function(){
+		document.getElementById("experience").innerHTML = navigator.platform;
 		adjustPage(navigator.platform, "resize");
 	});
 	
@@ -60,7 +61,7 @@ function adjustPage(platform, event){
 			break;
 		default:
 			$(".navbar").css("overflow-y", "visible");
-			if ($(window).width() <= 1148) {
+			if ($(window).width() <= 1148 && isMobile == false) {
 				toggleCss("small");
 				if (event == "resize") {
 					$(".navbar").fadeOut();

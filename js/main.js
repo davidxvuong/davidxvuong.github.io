@@ -15,7 +15,7 @@ $(function(){
 			scrollOld = scrollCurrent;
 			scrollCurrent = $(this).scrollTop();
 			
-			if (scrollCurrent - scrollOld > 0 && scrollCurrent > 400) {
+			if (scrollCurrent - scrollOld > 0 && scrollCurrent > 100) {
 				$(".navbar").fadeOut();
 			}
 			else {

@@ -110,7 +110,7 @@ function toggleCss(screenSize) {
 function load(){
 	var platform = navigator.platform;
 	isMobile = (platform == "iPad" || platform == "iPhone" || platform == "BlackBerry" || platform == "iPod" || platform == "Linux armv71")? true: false;
-	alert(isMobile);
+	alert(platform + " " + isMobile);
 	adjustPage(platform, "onload");
 }
 

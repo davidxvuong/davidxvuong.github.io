@@ -4,6 +4,10 @@
 	width: 100%;
 }
 
+.displayPdf{
+	float: right;
+}
+
 .returnToTop{
 	position: fixed;
 	width: auto;
@@ -35,7 +39,7 @@ a.link-button:link, a.link-button:visited, .div-button:visited, .div-button{
 	width: 200px;
 	text-align: center;
 	height: inherit;
-	margin: -20px auto 0 auto;
+	margin: 0 auto 0 auto;
 }
 
 a.link-button:hover, .div-button:hover{
@@ -79,9 +83,6 @@ a.link-button:hover, .div-button:hover{
 	color: #ffffff;
 	padding: 10px;
 	border-radius: 15px;
-	width: 40%;
-	float: left;
-	overflow: hidden;
 }
 
 #intro{

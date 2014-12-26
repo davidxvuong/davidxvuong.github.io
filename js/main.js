@@ -149,3 +149,18 @@ function showVideo(obj){
 		obj.innerHTML = "Show Video";
 	}
 }
+
+function showEvaluation(eval){
+	var directory = "doc/";
+	
+	switch (eval) {
+		case "1A":
+			directory += "1APerformanceEvaluation.pdf";
+			break;
+		case "1B":
+			directory += "1BPerformanceEvaluation.pdf";
+			break;
+	}
+	document.getElementById("addLink").href = directory;
+	document.getElementById("displayPdf").setAttribute("data", directory);
+}

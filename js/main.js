@@ -164,3 +164,24 @@ function showEvaluation(eval){
 	document.getElementById("addLink").href = directory;
 	document.getElementById("displayPdf").setAttribute("data", directory);
 }
+
+function showResOrRef(obj){
+	var directory = "doc/";
+	
+	switch (obj) {
+		case "Resume":
+			directory += "DavidVuongResumeWeb.pdf";
+			break;
+		case "Lightheart":
+			directory += "ReferenceLightheart.pdf";
+			break;
+		case "Kellawan":
+			directory += "ReferenceKellawan.pdf";
+			break;
+		case "Sutcliffe":
+			directory += "ReferenceSutcliffe.pdf";
+			break;
+	}
+	document.getElementById("addLink1").href = directory;
+	document.getElementById("displayPdf1").setAttribute("data", directory);
+}

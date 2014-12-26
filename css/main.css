@@ -4,8 +4,9 @@
 	width: 100%;
 }
 
-.displayPdf{
+#displayPdf{
 	float: right;
+	visibility: hidden;
 }
 
 .returnToTop{
@@ -69,6 +70,13 @@ a.link-button:hover, .div-button:hover{
 	overflow: hidden;
 	background-image: url(../images/3.jpg);
 	background-size: cover;
+	color: #ffffff;
+}
+
+#about{
+	background-image: url(../images/2.jpg);
+	background-size: cover;
+	color: #ffffff;
 }
 
 #resume{
@@ -77,14 +85,7 @@ a.link-button:hover, .div-button:hover{
 	overflow: hidden;
 }
 
-#bckgndOpacity{
-	background-color: rgba(61,0,122,0.7);
-	color: #ffffff;
-	padding: 10px;
-	border-radius: 15px;
-}
-
-#eval-blurb{
+#bckgndOpacity, #eval-blurb, #about-blurb{
 	background-color: rgba(61,0,122,0.7);
 	color: #ffffff;
 	padding: 10px;

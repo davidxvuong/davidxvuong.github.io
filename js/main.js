@@ -163,6 +163,7 @@ function showEvaluation(eval){
 	}
 	document.getElementById("addLink").href = directory;
 	document.getElementById("displayPdf").setAttribute("data", directory);
+	$("#displayPdf").css("visibility", "visible");
 }
 
 function showResOrRef(obj){

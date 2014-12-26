@@ -21,9 +21,50 @@
 	border-radius: 4px;
 }
 
+#video{
+	text-align: center; 
+	display: none;
+}
+
+a.link-button:link, a.link-button:visited, .div-button:visited, .div-button{
+	display: block;
+	text-decoration: none;
+	padding: 20px 4px 20px 4px;
+	background-color: #3D007A;
+	color: #ffffff;
+	width: 200px;
+	text-align: center;
+	height: inherit;
+	margin: -20px auto 0 auto;
+}
+
+a.link-button:hover, .div-button:hover{
+	background-color: #CCAAFF;
+	color: #000000;
+	cursor: pointer;
+}
+
 .returnToTop:hover{
 	background-color: #CCAAFF;
 	color: #3D007A;
+	cursor: pointer;
+}
+
+#project-desc{
+	margin: 10px auto 10px auto;
+	width: 85%;
+}
+
+#img-desc{
+	width: 100%;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+}
+
+#evaluations{
+	overflow: hidden;
+	background-image: url(../images/3.jpg);
+	background-size: cover;
 }
 
 #bckgndOpacity{
@@ -33,10 +74,25 @@
 	border-radius: 15px;
 }
 
+#eval-blurb{
+	background-color: rgba(61,0,122,0.7);
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 15px;
+	width: 40%;
+	float: left;
+	overflow: hidden;
+}
+
 #intro{
 	padding-top: 60px; 
 	background-image: url(../images/1.jpg); 
 	background-size: cover;
+}
+
+#projects{
+	background-color: #595959;
+	color: #FFFFff;
 }
 
 #jobDesc{
@@ -101,6 +157,11 @@ h2{
 	padding: 0;
 	margin: 0 0 10px 0; 
 	text-align: left;
+}
+
+h3 {
+	margin: auto;
+	font-size: 25px
 }
 
 a.navbar-item:link, a.navbar-item:visited{

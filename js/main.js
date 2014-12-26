@@ -6,7 +6,6 @@ var scrollCurrent;
 
 $(function(){
 	$(window).resize(function(){
-		document.getElementById("projects").innerHTML = $(window).width();
 		adjustPage(navigator.platform, "resize");
 	});
 	
@@ -35,10 +34,6 @@ $(function(){
 	$(".menu").hover(function(){
 		$('.menu').css( 'cursor', 'pointer' );
 	});
-	
-	$(".returnToTop").hover(function(){
-		$('.returnToTop').css( 'cursor', 'pointer' );
-	});		
 	
 	$(".returnToTop").click(function(){
 		$("html, body").animate({scrollTop: 0}, 500);
@@ -142,4 +137,15 @@ function load(){
 	var platform = navigator.platform;
 	isMobile = (platform == "iPad" || platform == "iPhone" || platform == "BlackBerry" || platform == "iPod" || platform == "Linux armv7l")? true: false;
 	adjustPage(platform, "onload");
+}
+
+function showVideo(obj){
+	if (obj.innerHTML == "Show Video") {
+		document.getElementById("video").style.display = "block";
+		obj.innerHTML = "Hide Video";
+	}
+	else {
+		document.getElementById("video").style.display = "none";
+		obj.innerHTML = "Show Video";
+	}
 }

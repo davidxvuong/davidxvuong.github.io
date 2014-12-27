@@ -31,6 +31,37 @@
 	display: none;
 }
 
+.navbar-list{
+	list-style-type: none;		
+	overflow: hidden;
+	padding: 0px 150px 0px 150px;		
+	margin: 0px;
+	background-color: #3D007A;
+}
+
+.navbar-li{
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+a.navbar-item:link, a.navbar-item:visited{
+	display: block;
+	text-decoration: none;
+	padding: 20px 4px 20px 4px;	
+	background-color: #3D007A;
+	color: #ffffff;
+	width: 150px;
+	text-align: center;	
+	text-transform: uppercase;
+	height: inherit;
+}
+
+a.navbar-item:hover{
+	background-color: #CCAAFF;
+	color: #000000;		
+}
+
 a.link-button:link, a.link-button:visited, .div-button:visited, .div-button{
 	display: block;
 	text-decoration: none;
@@ -154,19 +185,6 @@ body{
 	padding: 30px 150px 30px 150px;
 	font-size: 22px;
 }
-.navbar-list{
-	list-style-type: none;		
-	overflow: hidden;
-	padding: 0px 150px 0px 150px;		
-	margin: 0px;
-	background-color: #3D007A;
-}
-
-.navbar-li{
-	padding: 0px;
-	margin: 0px;
-	float: left;
-}
 
 h1{
 	font-size: 80px; 
@@ -184,23 +202,6 @@ h2{
 h3 {
 	margin: auto;
 	font-size: 25px
-}
-
-a.navbar-item:link, a.navbar-item:visited{
-	display: block;
-	text-decoration: none;
-	padding: 20px 4px 20px 4px;	
-	background-color: #3D007A;
-	color: #ffffff;
-	width: 150px;
-	text-align: center;	
-	text-transform: uppercase;
-	height: inherit;
-}
-
-a.navbar-item:hover{
-	background-color: #CCAAFF;
-	color: #000000;		
 }
 
 #circle{

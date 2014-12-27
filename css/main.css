@@ -41,6 +41,7 @@ a.link-button:link, a.link-button:visited, .div-button:visited, .div-button{
 	text-align: center;
 	height: inherit;
 	margin: 0 auto 0 auto;
+
 }
 
 a.link-button:hover, .div-button:hover{
@@ -96,6 +97,7 @@ a.link-button:hover, .div-button:hover{
 	padding-top: 60px; 
 	background-image: url(../images/1.jpg); 
 	background-size: cover;
+	overflow: hidden;
 }
 
 #projects{
@@ -119,6 +121,18 @@ a:link, a:visited{
 }
 
 a:hover{
+	color: #CCAAFF;
+}
+
+#contact{
+	overflow: hidden;
+}
+
+a.contact:link, a.contact:visited{
+	color: #000000;
+}
+
+a.contact:hover{
 	color: #CCAAFF;
 }
 

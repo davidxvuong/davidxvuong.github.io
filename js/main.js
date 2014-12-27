@@ -113,6 +113,7 @@ function toggleCss(screenSize) {
 		$("#intro").css("padding-top", "10px");
 		$(".navbar").css("font-size", "20px");
 		$(".menu").css("display", "block");
+		$("#displayPdf").css("width", "100%");
 		for (var i = 1; i < 4; i++){
 			$("#logo" + i).css("float", "left");
 		}
@@ -127,6 +128,7 @@ function toggleCss(screenSize) {
 		$(".navbar").css("font-size", "15px");
 		$(".menu").css("display", "none");
 		$(".menu").css("left", "0px");
+		$("#displayPdf").css("width", "75%");
 		for (var i = 1; i < 4; i++){
 			$("#logo" + i).css("float", "right");
 		}

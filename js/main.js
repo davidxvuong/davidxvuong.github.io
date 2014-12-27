@@ -114,8 +114,13 @@ function toggleCss(screenSize) {
 		$(".navbar").css("font-size", "20px");
 		$(".menu").css("display", "block");
 		$("#displayPdf").css("width", "100%");
+		document.getElementById("desc-width").width = "100%";
+		document.getElementById("logo-width").width = "0%";
+		$("#circle").css("height", "100px");
+		$("#circle").css("width", "100px");
 		for (var i = 1; i < 4; i++){
-			$("#logo" + i).css("float", "left");
+			$("#logo" + i).css("display", "none");
+			$("#logo" + i+ "-hide").css("display", "block");
 		}
 	}
 	else if (screenSize == "big") {
@@ -129,8 +134,13 @@ function toggleCss(screenSize) {
 		$(".menu").css("display", "none");
 		$(".menu").css("left", "0px");
 		$("#displayPdf").css("width", "75%");
+		document.getElementById("desc-width").width = "75%";
+		document.getElementById("logo-width").width = "25%";
+		$("#circle").css("height", "200px");
+		$("#circle").css("width", "200px");
 		for (var i = 1; i < 4; i++){
-			$("#logo" + i).css("float", "right");
+			$("#logo" + i).css("display", "block");
+			$("#logo" + i+ "-hide").css("display", "none");
 		}
 	}
 }

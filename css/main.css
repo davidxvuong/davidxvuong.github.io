@@ -103,7 +103,7 @@ a.link-button:hover, .div-button:hover{
 	cursor: pointer;
 }
 
-#project-desc{
+#project-desc1, #project-desc2, #project-desc3, #project-desc4{
 	margin: 10px auto 10px auto;
 	width: 85%;
 }

@@ -222,7 +222,7 @@ h3 {
 #circle{
 	width: 200px;
 	height: 200px;
-	border: 5px solid #3D007A;
+	border: #3D007A solid 5px;
 	display: block;
 	border-radius: 50%;
 	margin: 0 auto 0 auto;

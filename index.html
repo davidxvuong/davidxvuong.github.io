@@ -16,7 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	</head>
 	<body onload = "load()">
-		<img class = "menu" src = "images/menuicon.jpg"/>
+		<img class = "menu" src = "images/menuicon.jpg" alt = "Menu"/>
 		<div class = "navbar">
 			<ul class = "navbar-list">
 				<li class = "navbar-li"><a class = "navbar-item" href = "#experience">Experience</a></li>
@@ -29,18 +29,18 @@
 		</div>
 		<div class = "center" id = "intro">
 			<h1 style = "color: #ffffff"><strong>David Vuong</strong></h1>
-			<img src = "images/david.jpg" draggable = "false" id = "circle" />
+			<img src = "images/david.jpg" draggable = "false" id = "circle" alt = "Me!"/>
 			<p id = "bckgndOpacity">Hi, I'm David, and welcome to my website! I am pursuing a Bachelor of Applied Science degree at the <a href = "http://uwaterloo.ca">University of Waterloo</a>, majoring in Computer Engineering with an option in Management Sciences. I have a strong passion for software development, embedded systems, and circuit development. Feel free to <a href ="#contact">contact</a> me!</p>
 		</div>
 		<div class = "center" id = "experience">
 			<h2>Experience</h2>
 			<table style = "width: 100%;">
-				<col id = "desc-width" width = "75%">
-				<col id = "logo-width" width = "25%">
+				<col id = "desc-width">
+				<col id = "logo-width">
 				<tr>
 					<td>
-						<a href = "http://mssociety.ca"><img id = "logo3-hide" src ="images/mssociety logo.jpg"/></a>
-						<div id = "jobDesc">
+						<a href = "http://mssociety.ca"><img id = "logo3-hide" src ="images/mssocietylogo.jpg" alt = "MS Society of Canada"/></a>
+						<div>
 							<h3>Information Technology Intern - Application Services</h3>
 							<span style = "font-size: 18px">Multiple Sclerosis Society of Canada<br>
 							September - December 2014</span><br>
@@ -48,33 +48,33 @@
 						</div>
 					</td>
 					<td>
-						<a href = "http://mssociety.ca"><img id = "logo3" src ="images/mssociety logo.jpg"/></a>
+						<a href = "http://mssociety.ca"><img id = "logo3" src ="images/mssocietylogo.jpg" alt = "MS Society of Canada"/></a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href = "http://mssociety.ca"><img id = "logo2-hide" src ="images/mssociety logo.jpg"/></a>
-						<div id = "jobDesc">
+						<a href = "http://mssociety.ca"><img id = "logo2-hide" src ="images/mssocietylogo.jpg" alt = "MS Society of Canada"/></a>
+						<div>
 							<h3>Information Technology Intern - Application Services</h3>
 							<span style = "font-size: 18px">Multiple Sclerosis Society of Canada<br>
 							January - April 2014</span>
 						</div>
 					</td>
 					<td>
-						<a href = "http://mssociety.ca"><img id = "logo2" src ="images/mssociety logo.jpg"/></a>
+						<a href = "http://mssociety.ca"><img id = "logo2" src ="images/mssocietylogo.jpg" alt = "MS Society of Canada"/></a>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<a href = "http://intelliware.ca"><img id = "logo1-hide" src ="images/intelliware logo.png"/></a>
-						<div id = "jobDesc">
+						<div>
 							<h3>Technical Operations Intern</h3>
 							<span style = "font-size: 18px">Intelliware Software Development<br>
 							July - August 2012</span>
 						</div>
 					</td>
 					<td>
-						<a href = "http://intelliware.ca"><img id = "logo1" src ="images/intelliware logo.png"/></a>
+						<a href = "http://intelliware.ca"><img id = "logo1" src ="images/intelliwarelogo.png" alt = "Intelliware Software Development"/></a>
 					</td>
 				</tr>
 			</table>
@@ -83,34 +83,34 @@
 		<div class = "center" id = "projects">
 			<h2>Projects</h2>
 			<div>
-				<img src = "images/project1.jpg" id = "img-desc"/>
+				<img src = "images/project1.jpg" id = "img-desc1" alt = "Life in Electrical & Computer Engineering - A Waterloo Engineering Student Blog"/>
 				<div id = "project-desc">I co-founded a collaborative blog, which educates prospective students about our experiences in ECE to avoid mistakes commonly made among students, and tips to succeed in post-secondary education in engineering.</div><br>
 				<a class = "link-button" href = "http://lifeinece.ca">Life in ECE - Blog</a>
 			</div>
 			<hr style = "width: 90%">
 			<div>
-				<img src = "images/project2.jpg" id = "img-desc"/>
+				<img src = "images/project2.jpg" id = "img-desc2" alt = "Custom Google Maps - MS Society of Canada"/>
 				<div id = "project-desc">I developed a simple interactive custom map using the Google Maps API and JavaScript that would display the nearby MS Society office locations based on the client’s address fetched from the Micrsoft Dynamics CRM system. This would eventually be embedded inside the CRM database, to allow members from the Client Services team to identify the closest office while on the phone with the client.</div><br>
 				<a class = "link-button" href = "https://github.com/davidxvuong/Custom-Google-Maps-API-for-MS-CRM">Source Code</a>
 			</div>
 			<hr style = "width: 90%">
 			<div>
-				<img src = "images/project3.jpg" id = "img-desc"/>
+				<img src = "images/project3.jpg" id = "img-desc3" alt = "Battleship!"/>
 				<div id = "project-desc">I co-developed a two-player Battleship game, written in C#. This isn't any ordinary Battleship game, where two users share a computer and battle it out; it utilizes the existing LAN to develop an interactive game between two users on two separate computers. We implemented multithreading techniques as well as socket programming to fulfill this requirement.</div><br>
 				<a class = "link-button" href = "https://github.com/davidxvuong/Battleship">Source Code</a>
 			</div>
 			<hr style = "width: 90%">
 			<div>
-				<img src = "images/project4.jpg" id = "img-desc"/>
+				<img src = "images/project4.jpg" id = "img-desc4" alt = "VeX Robotics - Roller Coaster"/>
 				<div id = "project-desc">In a team of four, we designed a roller coaster using VeX robotics pieces for the structure and a Parallax microcontroller for automation purposes, written in PBASIC. I was responsible for assisting of building the structure of the roller coaster and programming the microcontroller to meet the automation objectives.</div><br>
 				<div class = "div-button" onclick = "showVideo(this)">Show Video</div><br>
-				<div id = "video"><iframe width="420" height="315" src="http://www.youtube.com/embed/QANcWlfHmG8" frameborder="0" allowfullscreen></iframe></div>
+				<div id = "video"><iframe width="420" height="315" src="http://www.youtube.com/embed/QANcWlfHmG8" style = "border; 0" allowfullscreen></iframe></div>
 			</div>
 		</div>
 		<div class = "center" id = "evaluations">
 			<h2>Evaluations</h2>
 			<p id = "eval-blurb">Managers hiring co-op students through the University of Waterloo are required to complete a Student Performance Evaluation at the end of every four-month work term. Below are the evaluations completed by my supervisors. Feel free to click on any of them!</p>
-			<object data="doc/Filler.pdf" style = "float: right;" type="application/pdf" width="75%" height="500px" id = "displayPdf">
+			<object data="doc/Filler.pdf" type="application/pdf" id = "displayPdf">
 			  <p>It appears you don't have a PDF plugin for this browser.
 			  No biggie... you can <a href="doc/Filler.pdf" id = "addLink">click here to
 			  download the PDF file.</a></p>
@@ -126,7 +126,7 @@
 			<div class = "div-button" style = "float: left" onclick = "showResOrRef('Kellawan')">Mike Kellawan</div>				
 			<div class = "div-button" style = "float: left" onclick = "showResOrRef('Resume')">Resume</div>
 			
-			<object style = "margin-top: 20px" data="doc/DavidVuongResumeWeb.pdf" type="application/pdf" width="100%" height="500px" id = "displayPdf1">
+			<object data="doc/DavidVuongResumeWeb.pdf" type="application/pdf" id = "displayPdf1">
 			  <p>It appears you don't have a PDF plugin for this browser.
 			  No biggie... you can <a href="doc/DavidVuongResumeWeb.pdf" id = "addLink1">click here to
 			  download the PDF file.</a></p>
@@ -176,9 +176,9 @@
 		<div class = "center" id = "contact">
 			<h2>Contact</h2>
 			<p>I'd love to chat with you! If you have any questions, recommendations, or general inquires, you can email me at <a class ="contact" href = "mailto:me@davidvuong.ca">me@davidvuong.ca</a>. You can also reach me via LinkedIn!</p>
-			<a href ="mailto:me@davidvuong.ca" class = "link-button" style = "width: 100px; float: left;"><img style = "width: 30px; height: 25px" src = "images/email.png"/></a>
-			<a href = "http://github.com/davidxvuong" class = "link-button" style = "width: 100px; float: left;"><img style = "width: 25px; height: 25px" src = "images/github.png"/></a>
-			<a href = "http://ca.linkedin.com/in/davidxvuong/" class = "link-button" style = "width: 100px; float: left;"><img style = "width: 35px; height: 25px" src = "images/linkedin.png"/></a>
+			<a href ="mailto:me@davidvuong.ca" class = "link-button" style = "width: 100px; float: left;"><img style = "width: 30px; height: 25px" src = "images/email.png" alt = "Email"/></a>
+			<a href = "http://github.com/davidxvuong" class = "link-button" style = "width: 100px; float: left;"><img style = "width: 25px; height: 25px" src = "images/github.png" alt = "GitHub"/></a>
+			<a href = "http://ca.linkedin.com/in/davidxvuong/" class = "link-button" style = "width: 100px; float: left;"><img style = "width: 35px; height: 25px" src = "images/linkedin.png" alt = "LinkedIn"/></a>
 		</div>
 		<div class = "returnToTop">Return to Top</div>
 	</body>

@@ -152,13 +152,13 @@ a.link-button:hover, .div-button:hover{
 	color: #FFFFff;
 }
 
-#logo1, #logo2, #logo3, #logo3-hide, #logo2-hide, #logo1-hide{
+#logo1, #logo2, #logo3,#logo4, #logo3-hide, #logo2-hide, #logo1-hide, #logo4-hide{
 	height: 80px; 
 	width: 280px;
 	display: block;
 }
 
- #logo3-hide, #logo2-hide, #logo1-hide{
+ #logo3-hide, #logo2-hide, #logo1-hide, #logo4-hide{
 	display: none;
 }
 

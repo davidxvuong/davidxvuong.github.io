@@ -117,7 +117,7 @@ function toggleCss(screenSize) {
 		$("#logo-width").css("width", "0%");
 		$("#circle").css("height", "100px");
 		$("#circle").css("width", "100px");
-		for (var i = 1; i < 4; i++){
+		for (var i = 1; i < 5; i++){
 			$("#logo" + i).css("display", "none");
 			$("#logo" + i+ "-hide").css("display", "block");
 		}
@@ -136,7 +136,7 @@ function toggleCss(screenSize) {
 		$("#logo-width").css("width", "25%");
 		$("#circle").css("height", "200px");
 		$("#circle").css("width", "200px");
-		for (var i = 1; i < 4; i++){
+		for (var i = 1; i < 5; i++){
 			$("#logo" + i).css("display", "block");
 			$("#logo" + i+ "-hide").css("display", "none");
 		}

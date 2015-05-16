@@ -149,13 +149,13 @@ function load(){
 	adjustPage(platform, "onload");
 }
 
-function showVideo(obj){
+function showVideo(obj, vid){
 	if (obj.innerHTML == "Show Video") {
-		document.getElementById("video").style.display = "block";
+		document.getElementById(vid).style.display = "block";
 		obj.innerHTML = "Hide Video";
 	}
 	else {
-		document.getElementById("video").style.display = "none";
+		document.getElementById(vid).style.display = "none";
 		obj.innerHTML = "Show Video";
 	}
 }

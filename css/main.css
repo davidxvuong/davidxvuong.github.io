@@ -42,7 +42,7 @@
 	border-radius: 4px;
 }
 
-#video{
+#video1, #video2{
 	text-align: center; 
 	display: none;
 }
@@ -103,12 +103,12 @@ a.link-button:hover, .div-button:hover{
 	cursor: pointer;
 }
 
-#project-desc1, #project-desc2, #project-desc3, #project-desc4{
+#project-desc{
 	margin: 10px auto 10px auto;
 	width: 85%;
 }
 
-#img-desc1, #img-desc2, #img-desc3, #img-desc4{
+#img-desc{
 	width: 100%;
 	-moz-user-select: none;
 	-webkit-user-drag: none;

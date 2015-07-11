@@ -53,14 +53,17 @@ $(function(){
 	});
 	
 	$(".navbar-item").click(function(event){
-		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-		
-		if (isMobile == true || (isMobile == false && $(window).width() <= MIN_SCREEN_SIZE)){
-			$(".menu").css("left", "0px");
-			$(".navbar").hide();
-			isMenuOpen = false;
+		if (document.getElementById("blog-link").getAttribute("href") != "http://lifeinece.ca"){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			
+			if (isMobile == true || (isMobile == false && $(window).width() <= MIN_SCREEN_SIZE)){
+				$(".menu").css("left", "0px");
+				$(".navbar").hide();
+				isMenuOpen = false;
+			}
 		}
+		
 	});
 });
 

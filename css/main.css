@@ -145,6 +145,9 @@ a.link-button:hover, .div-button:hover{
 	color: #ffffff;
 	padding: 10px;
 	border-radius: 15px;
+	
+	text-align: justify;
+    text-justify: inter-word;
 }
 
 #intro{

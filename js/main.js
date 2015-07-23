@@ -206,7 +206,7 @@ function togglePhoto(value) {
 	var image = document.getElementById("project-img");
 	imageCount += value;
 	
-	if (imageCount == 7) {
+	if (imageCount == 8) {
 		imageCount = 0;
 	}
 	

@@ -2,6 +2,7 @@
 	position: fixed;
 	font-size: 15px;
 	width: 100%;
+	z-index: 99;
 }
 
 #displayPdf{
@@ -239,4 +240,61 @@ h3 {
 	padding: 0;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
+}
+
+/*image slider*/
+
+#slider {
+	width: auto;
+	max-height: 300px;
+	max-width:100%;
+	margin: 50px auto;
+	position:relative;
+	border-radius:4px;
+	overflow:hidden;
+	}
+#project-img {
+	width: auto;
+	max-height: 300px;
+	max-width:80%;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	display: block;
+	margin: 0 auto 0 auto;
+	}
+.left_hold {
+	height: 400px;
+	width: 100px;
+	top: 0px;
+	left: 0px;
+}
+.right_hold {
+	height: 400px;
+	width: 100px;
+	top: 0px;
+	right: 0px;
+}
+.left {
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:40%;
+	left:20px;
+	opacity:0.2;
+	transition: all .2s ease-in-out 0s;
+	}
+.right {
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:40%;
+	right:20px;
+	opacity:0.2;
+	transition: all .5s ease-in-out 0s;
+	}
+.left_hold:hover .left {
+	opacity:0.6;
+	}
+.right_hold:hover .right {
+	opacity:0.6;
 }

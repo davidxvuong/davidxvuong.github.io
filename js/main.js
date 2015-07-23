@@ -199,3 +199,47 @@ function showResOrRef(obj){
 	document.getElementById("addLink1").href = directory;
 	document.getElementById("displayPdf1").setAttribute("data", directory);
 }
+
+var imageCount = 7;
+
+function togglePhoto(value) {
+	var image = document.getElementById("project-img");
+	imageCount += value;
+	
+	if (imageCount == 7) {
+		imageCount = 0;
+	}
+	
+	if (imageCount == -1) {
+		imageCount = 7;
+	}
+	$('#project-img').fadeOut(500, function() {
+        $('#project-img').attr("src","images/project" + imageCount + ".jpg");
+        $('#project-img').fadeIn(500);
+    });
+	
+	if (imageCount == 0) {
+		document.getElementById("project-desc").innerHTML = "In a team of four, we designed a roller coaster using VeX robotics pieces for the structure and a Parallax microcontroller for automation purposes, written in PBASIC. I was responsible for assisting of building the structure of the roller coaster and programming the microcontroller to meet the automation objectives.";
+	}
+	else if (imageCount == 1) {
+		document.getElementById("project-desc").innerHTML = "I co-developed a two-player Battleship game, written in C#. This isn't any ordinary Battleship game, where two users share a computer and battle it out; it utilizes the existing LAN to develop an interactive game between two users on two separate computers. We implemented multithreading techniques as well as socket programming to fulfill this requirement.";
+	}
+	else if (imageCount == 2) {
+		document.getElementById("project-desc").innerHTML = "Get Up and Go is a website developed in a team of two at EngHack - Winter 2015, a hackathon held by the Engineering Society at the University of Waterloo. It allows users to easily explore the area that they are currently in using one of four modes of transportation. We used the Google Maps API to get the current user location, and fetch the set of directions from Google that takes the user to the undisclosed location generated behind the scenes.";
+	}
+	else if (imageCount == 3) {
+		document.getElementById("project-desc").innerHTML = "I participated in WearHacks Toronto 2015. In a team of six, we experimented with the Intel Edison + Arduino Expansion board, Thalmic Lab's Myo armband, and the new Xadow Wearable Kit for Intel Edison. Using these technologies, we then developed My-O-Lock: a multi-digital key that uses motion gestures to unlock doors! We wrote code in both Python and Arduino to allow both the Myo and Intel Edison communicate with each other.";
+	}
+	else if (imageCount == 4) {
+		document.getElementById("project-desc").innerHTML = "I have some five-banded resistors at home, and it was really hard to determine the value of the resistor because the stripes was so hard to read. Using an Arduino and some basic knowledge of analog circuits, I created a simple ohmmeter that would output the value of the resistor in question to the console window.";
+	}
+	else if (imageCount == 5) {
+		document.getElementById("project-desc").innerHTML = "FitChallenge is an app that I co-developed in a team of four at EngHack - Spring 2015, a hackathon held by the Engineering Society at the University of Waterloo. Fit Challenge is an app designed to change personal fitness into interpersonal fitness. The app allows users to choose a fitness activity and challenge a nearby opponent. We developed the app in Android Studio, with a backend server running Node.js.";
+	}
+	else if (imageCount == 6) {
+		document.getElementById("project-desc").innerHTML = "Back when I took my Cisco CCNA courses in high school, my teacher would always give us subnetting quizzes, asking us to break down the address space given the user requirements. So, I developed an application that will generate subnetting questions and provides the answer by solving the question recursively. The console application is implemented in C++. Eventually, I will implement a GUI in C# to make it user friendly.";
+	}
+	else if (imageCount == 7) {
+		document.getElementById("project-desc").innerHTML = "FacePay is a web application developed in a team of three at BattleHack Toronto 2015. FacePay is a new method of processing online payments. By utilizing your existing webcam on your computer, we simply take a snapshot of you and we will fetch your credit card information to complete the transaction! It is as simple as a couple button clicks. We implemented the front end using JavaScript and CSS, and the back end using PHP and Java. We used the SkyBiometry API to perform facial recognition and detection, and the Braintree API to process online payments."; 
+	}
+}

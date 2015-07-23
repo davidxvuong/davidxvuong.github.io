@@ -94,57 +94,14 @@
 		</div>
 		<div class = "center" id = "projects">
 			<h2>Projects</h2>
-			<div>
-				<img src = "images/project7.png" id = "img-desc" alt ="FitChallenge" />
-				<div id = "project-desc">FitChallenge is an app that I co-developed in a team of four at EngHack - Spring 2015, a hackathon held by the Engineering Society at the University of Waterloo. Fit Challenge is an app designed to change personal fitness into interpersonal fitness. The app allows users to choose a fitness activity and challenge a nearby opponent. We developed the app in Android Studio, with a backend server running Node.js.</div>
-				<a class = "link-button" href = "https://github.com/Yifei-Li/FitChallenge">Source Code</a>
+			<div id = "slider">
+				<div id = "image-container">
+					<img id = "project-img" src = "images/project7.jpg"/>
+					<div class="left_hold"><img onClick="togglePhoto(1)" class="left" src="images/left.png"></div>
+					<div class="right_hold"><img onClick="togglePhoto(-1)" class="right" src="images/right.png"></div>
+				</div>
 			</div>
-			<hr style = "width: 90%">
-			<div>
-				<img src = "images/project8.jpg" id = "img-desc" alt ="Arduino Ohmmeter" />
-				<div id = "project-desc">I have some five-banded resistors at home, and it was really hard to determine the value of the resistor because the stripes was so hard to read. Using an Arduino and some basic knowledge of analog circuits, I created a simple ohmmeter that would output the value of the resistor in question to the console window.</div>
-				<a class = "link-button" href = "https://github.com/davidxvuong/Arduino-Ohmmeter">Source Code</a>
-			</div>
-			<hr style = "width: 90%">
-			<div>
-				<img src = "images/project6.jpg" id = "img-desc" alt ="My-O-Lock" />
-				<div id = "project-desc">I participated in <a href = "http://www.wearhacks.com/">WearHacks Toronto 2015</a>. In a team of six, we experimented with the <a href = "http://www.intel.com/content/www/us/en/do-it-yourself/edison.html">Intel Edison + Arduino Expansion board</a>, <a href = "https://www.thalmic.com/en/myo/">Thalmic Lab's Myo armband</a>, and the new <a href = "http://www.seeedstudio.com/depot/Xadow-Wearable-Kit-For-Intel-Edison-p-2428.html">Xadow Wearable Kit for Intel Edison</a>. Using these technologies, we then developed My-O-Lock: a multi-digital key that uses motion gestures to unlock doors! We wrote code in both Python and Arduino to allow both the Myo and Intel Edison communicate with each other.</div>
-				<div class = "div-button" onclick ="showVideo(this, 'video1')">Show Video</div><a class = "link-button" href = "https://github.com/davidxvuong/My-O-Lock">Source Code</a><br>
-				<div id = "video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/fOOfJNLi3Ic" frameborder="0" allowfullscreen></iframe></div>
-			</div>
-			<hr style = "width: 90%">
-			<div>
-				<img src = "images/project5.jpg" id = "img-desc" alt = "Get Up and Go!" />
-				<div id = "project-desc">Get Up and Go is a website developed in a team of two at EngHack - Winter 2015, a hackathon held by the Engineering Society at the University of Waterloo. It allows users to easily explore the area that they are currently in using one of four modes of transportation. We used the Google Maps API to get the current user location, and fetch the set of directions from Google that takes the user to the undisclosed location generated behind the scenes.</div><br>
-				<a class = "link-button" href = "https://github.com/davidxvuong/GetUpAndGo">Source Code</a>
-				<a class = "link-button" href = "http://davidvuong.ca/GetUpAndGo/">View Website</a>
-			</div>
-			<hr style = "width: 90%">
-			<div>
-				<img src = "images/project1.jpg" id = "img-desc" alt = "Life in Electrical & Computer Engineering - A Waterloo Engineering Student Blog"/>
-				<div id = "project-desc">I co-founded a collaborative blog, which educates prospective students about our experiences in ECE to avoid mistakes commonly made among students, and tips to succeed in post-secondary education in engineering.</div><br>
-				<a class = "link-button" href = "http://lifeinece.ca">Life in ECE - Blog</a>
-			</div>
-			<hr style = "width: 90%">
-			<div>
-				<img src = "images/project2.jpg" id = "img-desc" alt = "Custom Google Maps - MS Society of Canada"/>
-				<div id = "project-desc">I developed a simple interactive custom map using the Google Maps API and JavaScript that would display the nearby MS Society office locations based on the client’s address fetched from the Micrsoft Dynamics CRM system. This would eventually be embedded inside the CRM database, to allow members from the Client Services team to identify the closest office while on the phone with the client.</div><br>
-				<a class = "link-button" href = "https://github.com/davidxvuong/Custom-Google-Maps-API-for-MS-CRM">Source Code</a>
-				<a class = "link-button" href = "http://davidvuong.ca/MicrosoftDynamicsCRMCustomMap/">View Working Copy</a>
-			</div>
-			<hr style = "width: 90%">
-			<div>
-				<img src = "images/project3.jpg" id = "img-desc" alt = "Battleship!"/>
-				<div id = "project-desc">I co-developed a two-player Battleship game, written in C#. This isn't any ordinary Battleship game, where two users share a computer and battle it out; it utilizes the existing LAN to develop an interactive game between two users on two separate computers. We implemented multithreading techniques as well as socket programming to fulfill this requirement.</div><br>
-				<a class = "link-button" href = "https://github.com/davidxvuong/Battleship">Source Code</a>
-			</div>
-			<hr style = "width: 90%">
-			<div>
-				<img src = "images/project4.jpg" id = "img-desc" alt = "VeX Robotics - Roller Coaster"/>
-				<div id = "project-desc">In a team of four, we designed a roller coaster using VeX robotics pieces for the structure and a Parallax microcontroller for automation purposes, written in PBASIC. I was responsible for assisting of building the structure of the roller coaster and programming the microcontroller to meet the automation objectives.</div><br>
-				<div class = "div-button" onclick = "showVideo(this, 'video2')">Show Video</div><br>
-				<div id = "video2"><iframe width="420" height="315" src="https://www.youtube.com/embed/IkTZJlnfx0o" frameborder="0" allowfullscreen></iframe></div>
-			</div>
+			<div id ="project-desc">FacePay is a web application developed in a team of three at BattleHack Toronto 2015. FacePay is a new method of processing online payments. By utilizing your existing webcam on your computer, we simply take a snapshot of you and we will fetch your credit card information to complete the transaction! It is as simple as a couple button clicks. We implemented the front end using JavaScript and CSS, and the back end using PHP and Java. We used the SkyBiometry API to perform facial recognition and detection, and the Braintree API to process online payments.</div>
 		</div>
 		<div class = "center" id = "evaluations">
 			<h2>Evaluations</h2>
